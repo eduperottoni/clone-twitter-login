@@ -107,6 +107,7 @@ body{
 .content form .button-login{
     padding: 0px 30px;
     width: 100%;
+    max-width:547.5px;
     height: 57px;
 
     margin-bottom: 30px;
