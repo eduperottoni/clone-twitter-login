@@ -38,28 +38,8 @@ inputPassword.addEventListener('blur', function(event) {
 //Traqueando os inputs
 //Quando os dois inputs estiverem preenchidos, habilitar o botão de entrar nas cores branco e azul
 
-
-
-// setInterval(function(){
-//     var buttonReady = inputUser.value.length > 0 && inputPassword.value.length > 0
-//     if (buttonReady){
-//         button.style.backgroundColor= 'var(--blue-twitter)';
-//         buttonTitle.style.color = 'white';
-//         button.addEventListener('onmouseover', function(event){
-//             event.preventDefault();
-//             button.style.backgroundColor= 'var(--button-blocked)'
-//             buttonTitle.style.color='var(--button-text-blocked)'
-//         })
-//     }else{
-//         button.style.backgroundColor= '';
-//         buttonTitle.style.color = '';
-//     }
-//     return buttonReady;
-// },200)
-
-inputUser.addEventListener('keydown', function(){
-    console.log('Oi')
-    let buttonReady = inputUser.value.length > 0 && inputPassword.value.length > 0
+setInterval(function(){
+    var buttonReady = inputUser.value.length > 0 && inputPassword.value.length > 0
     if (buttonReady){
         button.style.backgroundColor= 'var(--blue-twitter)';
         buttonTitle.style.color = 'white';
@@ -72,17 +52,8 @@ inputUser.addEventListener('keydown', function(){
         button.style.backgroundColor= '';
         buttonTitle.style.color = '';
     }
-})
+    return buttonReady;
+},200)
 
-
-
-button.addEventListener('onmouseover', function(event){
-    event.preventDefault();
-    if  (inputUser.value.length > 0 && inputPassword.value.length > 0){
-        button.style.backgroundColor= 'var(--button-blocked)'
-        buttonTitle.style.color='var(--button-text-blocked)'
-    }
-})
- 
 //Traqueando evento de clique no botão de entrar
 //Se o botão for clicado, exibir um alert na tela 

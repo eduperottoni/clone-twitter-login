@@ -151,3 +151,8 @@ body{
 .content section a:hover{
     text-decoration: underline;
 }
+
+.content form .button-login:hover{
+    background-color: var(--button-blocked);
+}
+
